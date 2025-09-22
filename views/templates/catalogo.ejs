@@ -1,0 +1,33 @@
+<%- include("head.ejs",{titulo:titulo}); %>
+<body>
+    <%- include("header.ejs"); %>
+
+    <section class="catalogo">
+        
+        <% data.forEach(element => { %>
+            
+            <% if (element.activo==="on") { %>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="<%=element.linkimg%>" alt="<%=element.titulo%>">
+                <div class="card-body">
+                    <h5 class="card-title"><%=element.titulo%></h5>
+                    <p class="card-text"><%=element.descripcion%></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Precio: <%=element.precio%> CUP</li>
+                    
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Contacto <i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="card-link">Email <i class="fas fa-envelope"></i></i></a>
+                </div>
+        </div>
+        <% } %> 
+        <% }) %>
+    
+        
+    </section>
+
+    <%- include("footer.ejs",{usuario:""}); %>
+    
+</body>

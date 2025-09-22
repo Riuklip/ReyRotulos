@@ -1,0 +1,46 @@
+<%- include("head.ejs",{titulo:titulo}); %>
+<body>
+    <%- include("header.ejs"); %>
+
+    <section class="tablaEdicion">
+        <a class="añadir" href="/edicion/nuevo">Añadir</a>
+        <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Título</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Activo</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% datab.forEach(element => { %>
+        <tr>
+        <th scope="row"><%=element.id%></th>
+        <td><%=element.titulo%></td>
+        <td><%=element.descripcion%></td>
+        <td><% if (element.linkimg) { %>
+                                    <a href="<%= element.linkimg %>"><img width="40px" src="<%= element.linkimg %>" alt="<%= element.titulo %>" class="img-thumbnail table-img"></a>
+                                <% } else { %>
+                                    <span class="text-muted">Sin imagen</span>
+                                <% } %></td>
+            
+
+        <td><%=element.precio%></td>
+        <td><%=element.activo%></td>
+        <td class="accionBot"><a href="/edicion/editar?id=<%=element.id%>">Editar</a>
+            <a href="/edicion/eliminar?id=<%=element.id%>">Eliminar</a>
+        </td>
+        </tr>
+        <% }) %>
+
+  </tbody>
+</table>
+    </section>
+
+
+    <%- include("footer.ejs"); %>
+</body>

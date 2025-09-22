@@ -1,0 +1,18 @@
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Rey<span>Rotulos</span></a>
+            <nav>
+                <% if (usuario) { %>
+                <h1><%= usuario.nombre %></h1>
+                <% } else { %>
+    
+                <ul>
+                    
+                    <li><a href="../home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+        <% } %> 
+            </nav>
+        </div>
+    </header>

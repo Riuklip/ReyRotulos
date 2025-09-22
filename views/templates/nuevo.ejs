@@ -1,0 +1,28 @@
+<%- include("head.ejs",{titulo:titulo}); %>
+<body>
+    <%- include("header.ejs"); %>
+
+    <section class="login_cont">
+        <form action="/edicion/nuevo/validar" method="POST" id="login" class="login">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion">
+            <label for="linkimg">Link de Imagen</label>
+            <input type="text" name="linkimg" id="linkimg">
+            <label for="activo">Activo</label>
+               <div class="checkbox-wrapper-3">
+                    <input type="checkbox" name="activo" id="cbx-3" />
+                    <label for="cbx-3" class="toggle"><span></span></label>
+                </div>
+            <label for="precio">Precio</label>
+            
+            <input type="text" name="precio" id="precio">
+            <button type="submit">Añadir</button>
+        </form>
+    </section>
+
+
+   <%- include("footer.ejs",{usuario:""}); %>
+    
+</body>

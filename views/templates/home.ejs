@@ -1,0 +1,99 @@
+<%- include("head.ejs",{titulo:titulo}); %>
+<body>
+    <%- include("header.ejs",{usuario:""}); %>
+     <section class="hero">
+        <div class="container">
+            <h1>Rótulos de Vinil de Alta Calidad</h1>
+            <p>Transformamos tus ideas en impactantes rótulos para negocio, vehículos y decoración. Calidad premium y entrega rápida.</p>
+            <a href="/home/catalogo" class="btn">Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos una amplia variedad de soluciones en rótulos de vinil para todo tipo de necesidades</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1581833971350-d=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Rótulos para Negocios">
+                    </div>
+                    <div class="service-content">
+                        <h3>Rótulos para Negocios</h3>
+                        <p>Vinilos profesionales para fachadas, escaparates y cristaleras que realzan la imagen de tu negocio.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Vinil para Vehículos">
+                    </div>
+                    <div class="service-content">
+                        <h3>Vinil para Vehículos</h3>
+                        <p>Publicidad móvil efectiva con vinilos de alta resistencia para coches, furgonetas y camiones.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Señalización Interior">
+                    </div>
+                    <div class="service-content">
+                        <h3>Señalización Interior</h3>
+                        <p>Vinilos decorativos y funcionales para interiores de oficinas, comercios y espacios públicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>Solicita presupuesto sin compromiso o consulta cualquier duda sobre nuestros servicios</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ponte en contacto con nosotros</h3>
+                    <p>Estamos aquí para ayudarte a encontrar la mejor solución en rótulos de vinil para tu proyecto.</p>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Calle Industria 23, Polígono Norte, Madrid</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <p>+34 91 555 44 33</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <p>info@vinilexpress.es</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="tel" placeholder="Teléfono">
+                        <textarea placeholder="Describe tu proyecto o consulta" required></textarea>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <%- include("footer.ejs",{usuario:""}); %>
+    
+</body>

@@ -1,0 +1,18 @@
+<%- include("head.ejs",{titulo:titulo}); %>
+<body>
+    <%- include("header.ejs",{usuario:""}); %>
+
+    <section class="login_cont">
+        <form action="/auth/validar" method="POST" id="login" class="login">
+            <label for="Username">Nombre</label>
+            <input type="text" name="Username" id="Username">
+            <label for="Password">Contraseña</label>
+            <input type="text" name="Password" id="Password">
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </section>
+
+
+    <%- include("footer.ejs",{usuario:"1"}); %>
+    
+</body>
