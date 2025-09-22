@@ -7,10 +7,10 @@ module.exports={// se exporta a la app.js
 
     },
     mysql:{
-        host: "localhost",
-        User :"root",
-        password:`vegetta777`,
-        database:`reyrotulos`
+        host: "sql.freedb.tech",
+        User :"freedb_EliCarlos",
+        password:`dT7znSD2s?Qsp&a`,
+        database:`freedb_DatatestEli`
     },
     jwt:{
         secret:"notasecreta"
